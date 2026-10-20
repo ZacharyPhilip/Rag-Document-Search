@@ -1,2 +1,4 @@
 pypdf>=4.0
 pytest>=8.0
+numpy>=1.26
+sentence-transformers>=2.7
