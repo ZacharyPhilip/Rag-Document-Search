@@ -1,0 +1,3 @@
+# FAISS vector search
+
+FAISS is a library from Meta for efficient similarity search over dense vectors. The simplest index is IndexFlatL2 or IndexFlatIP, which compares the query against every stored vector. This brute-force approach is exact and works well up to roughly a million vectors. For larger collections, approximate indexes such as IVF partition the space into clusters and only search the nearest few, trading a little recall for large speed gains. HNSW builds a navigable graph for fast approximate nearest-neighbour lookups. When vectors are normalised to unit length, inner product search is equivalent to cosine similarity, which is why IndexFlatIP is commonly used with sentence embeddings. Product quantization compresses vectors to reduce memory use.
