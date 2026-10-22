@@ -1,0 +1,11 @@
+[
+  {"question": "Why is asyncio a poor fit for CPU-bound work?", "doc": "python_asyncio.md", "keyword": "global interpreter lock"},
+  {"question": "How do I run several coroutines concurrently and collect results?", "doc": "python_asyncio.md", "keyword": "asyncio.gather"},
+  {"question": "How do I apply a timeout to an awaitable?", "doc": "python_asyncio.md", "keyword": "wait_for"},
+  {"question": "Which index does exact brute force search?", "doc": "faiss_vector_search.md", "keyword": "IndexFlatIP"},
+  {"question": "What does approximate IVF indexing trade for speed?", "doc": "faiss_vector_search.md", "keyword": "recall"},
+  {"question": "How can vector memory use be reduced?", "doc": "faiss_vector_search.md", "keyword": "quantization"},
+  {"question": "Why use overlap between chunks?", "doc": "retrieval_augmented_generation.md", "keyword": "boundary"},
+  {"question": "What does mean reciprocal rank reward?", "doc": "retrieval_augmented_generation.md", "keyword": "reciprocal rank"},
+  {"question": "How does RAG reduce hallucination?", "doc": "retrieval_augmented_generation.md", "keyword": "hallucination"}
+]
