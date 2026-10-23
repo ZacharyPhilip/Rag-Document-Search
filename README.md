@@ -41,7 +41,7 @@ about unauthenticated requests, it is harmless and doesn't affect the program.
 ## API
 
 | Method | Path | Description |
-
+|---|---|---|
 | POST | `/documents` | Upload and index a `.pdf`, `.txt`, or `.md` file (re-uploading a doc replaces it) |
 | GET | `/documents` | List indexed documents with chunk counts |
 | DELETE | `/documents/{name}` | Remove a document from the index |
@@ -64,7 +64,7 @@ Example response from `/query`:
 Set these environment variables to override the defaults.
 
 | Variable | Default | Meaning |
-
+|---|---|---|
 | `CHUNK_WORDS` | `100` | Words per chunk, increase if you want more of the passage to be read |
 | `CHUNK_OVERLAP` | `20` | Words shared between neighbouring chunks |
 | `DATA_DIR` | `data` | Where the index is saved *included in the gitignore file |
@@ -85,8 +85,8 @@ python -m eval.evaluate --k 3 --chunk-words 100 --overlap 20
 Results with MiniLM:
 
 | Chunk words / overlap | Hit@1 | Hit@3 | MRR (k=3) |
-
-| 40 / 10 | 66% | 89% | 0.74 |
+|---|---|---|---|
+| 40 / 10 | 67% | 89% | 0.74 |
 | 60 / 15 | 67% | 100% | 0.80 |
 | 100 / 20 | 89% | 100% | 0.94 |
 
