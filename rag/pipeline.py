@@ -19,8 +19,8 @@ class RAGService:
                  chunk_size: int | None = None, chunk_overlap: int | None = None):
         self.data_dir = Path(data_dir or os.getenv("DATA_DIR", "data"))
         self.embedder = embedder or get_embedder()
-        self.chunk_size = chunk_size or int(os.getenv("CHUNK_WORDS", "200"))
-        self.chunk_overlap = chunk_overlap or int(os.getenv("CHUNK_OVERLAP", "40"))
+        self.chunk_size = chunk_size or int(os.getenv("CHUNK_WORDS", "100"))
+        self.chunk_overlap = chunk_overlap or int(os.getenv("CHUNK_OVERLAP", "20"))
         self.store = VectorStore.load(self.data_dir, self.embedder.dim)
 
     def ingest(self, path: str | Path, name: str | None = None) -> int:
